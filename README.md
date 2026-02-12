@@ -49,6 +49,7 @@ Overall crash volume in New York City peaked in 2018–2019 before declining by 
  - Fewer crashes did not translate into proportionally safer outcomes, underscoring the need to track severity—not just volume.
 
 *![total crashes compared to harmful crashes](total-vs-harmful-crashes.png)*
+*![
 
 
 2. Borough-Level Severity Disparities
