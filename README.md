@@ -12,11 +12,11 @@ Key areas that fueled insights and targeted recommendations include:
 
 An interactive dashboard in Power BI can be downloaded [here.](https://drive.google.com/file/d/1h-DyTfiRkmvLYc7xEawxuxmlFAAT9Ip6/view?usp=sharing)
 
-The SQL queries used to clean, structure, and stage the data for analysis can be viewed [here.](nyc-crash-data-cleaning.sql)
+The SQL queries used to clean, structure, and stage the data for analysis can be viewed [here.](nyc-crashes-data-cleaning.sql)
 
-The SQL queries used to analyze overall data trends and specific insights can be viewed [here.](nyc-crash-data-analysis.sql)
+The SQL queries used to analyze overall data trends and specific insights can be viewed [here.](nyc-crashes-data-analysis.sql)
 
-An Excel workbook containing an issue log during data cleaning can be viewed [here.](nyc-crashes-issue-log.xlsx)
+An Excel workbook containing an issue log during data cleaning can be viewed [here.](nyc-crashes-issues-log.xlsx)
 
 ---
 
@@ -44,7 +44,7 @@ A substantial number of crash records lacked a reported borough despite containi
 
 The process was implemented in Python to efficiently handle large-scale spatial joins. Only records with missing boroughs and valid coordinates were evaluated, preserving original data while improving completeness. Derived values were flagged for transparency, and crashes without sufficient geographic information were intentionally left unassigned. This enrichment significantly improved borough-level data quality and enabled more accurate severity and risk comparisons across boroughs.
 
-The Python code used to accomplish this task can be viewed [here.](nyc-crashes-borough-fix.ipynb)
+The Python code used to accomplish this task can be viewed [here.](nyc-crashes-boroughs-fix.ipynb)
 
 ---
 
