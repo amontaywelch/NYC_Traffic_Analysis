@@ -33,80 +33,53 @@ A substantial number of crash records lacked a reported borough despite containi
 
 The process was implemented in Python to efficiently handle large-scale spatial joins. Only records with missing boroughs and valid coordinates were evaluated, preserving original data while improving completeness. Derived values were flagged for transparency, and crashes without sufficient geographic information were intentionally left unassigned. This enrichment significantly improved borough-level data quality and enabled more accurate severity and risk comparisons across boroughs.
 
-The Python code used to accomplish this task can be viewed [here.]
+The Python code used to accomplish this task can be viewed [here.](nyc-crashes-borough-fix.ipynb)
 
 ---
 
-### Executive Summary
-Analysis of New York City collisions shows that overall crash volume peaked in 2018–2019 before declining by nearly 60% between 2020 and 2024. However, reductions in crash volume have not translated into proportional reductions in crash severity, and meaningful differences in risk persist across boroughs, locations, and road user groups. While the initial decline during the early 2020s aligns with COVID-19 travel restrictions, subsequent trends indicate that fewer crashes have not necessarily resulted in safer outcomes.
+## Executive Summary
+Overall crash volume in New York City peaked in 2018–2019 before declining by nearly 60% between 2020 and 2024. However, this reduction in crash frequency has not translated into proportional improvements in safety outcomes. While total crashes fell sharply following COVID-related travel shifts, crashes resulting in injury or death rebounded more quickly, and fatal risk per crash increased across boroughs and road user groups. These patterns indicate that fewer crashes have not necessarily resulted in safer conditions, highlighting the importance of monitoring severity—not just volume—when evaluating traffic safety progress.
 
-Placed below is the home/overview page of the corresponding dashboard, highlighting the big picture of the analysis. The full dashboard can be downloaded [here.](https://drive.google.com/file/d/1y8I7H01LmZmtQRFTuctt0C7xpPFn6NsH/view?usp=sharing)
+*![dashboard overview page](nyc-overview-page)*
 
-*![overview page](crashes-overview.png)*
+### Severity–Volume Divergence
+ - Total crash volume peaked in 2018–2019, then declined sharply (≈60%) after 2020.
+ - Harmful crashes (injury or death) rebounded faster than total crashes post‑2020.
+ - Fatal crash risk per 10,000 crashes increased across boroughs and road user groups.
+ - Fewer crashes did not translate into proportionally safer outcomes, underscoring the need to track severity—not just volume.
 
-
-### Crash Trends
- - City-wide crashes peaked in 2018, with 231,564 reported collisions, 61,940 injuries, and 231 deaths, meaning that about 27% of crashes resulted in injury or death (about 1 in 4). 
- - Despite a decline in overall crash volume, crashes resulting in injury or death have trended upward, indicating that recent reductions in crashes have not translated into safer outcomes.
- - Harmful crashes are most concentrated during the late afternoon and early evening (2-7pm), occurring most frequently from Tuesday through Saturday.
-
-*![total vs harmful crashes](total-vs-harmful-crashes.png)*
-*![crash trends + 3 yr rolling avg](covid-shift.png)*
-*![time of day heatmap](day-time-heatmap.png)*
+*![total crashes compared to harmful crashes](total-vs-harmful-crashes.png)*
 
 
+2. Borough-Level Severity Disparities
+• 	Fatal crash risk varies significantly across boroughs when normalized per 10,000 crashes.
+• 	Staten Island consistently shows the highest fatal risk across pedestrians, cyclists, and motorists.
+• 	Brooklyn and Manhattan show lower fatal risk per crash despite high crash volume.
+• 	Borough rankings remain stable over time, suggesting structural differences rather than temporary fluctuations.
 
-### Borough-Level Risk
- - While harmful crash volumes declined sharply after 2019, fatal crash risk increased across all boroughs beginning in 2020, indicating that crashes became less frequent but more severe.
- - 
+3. Vulnerable Road Users
+• 	Pedestrians face roughly 3× higher fatal risk per crash compared to motorists and cyclists.
+• 	Fatal crash risk increased after 2020 for all road user groups.
+• 	Severity disparities widen for vulnerable users, especially cyclists.
+• 	Manhattan remains among the lowest‑risk boroughs, while Staten Island remains the highest across all groups.
 
-*![borough fatal risk per 10k crashes](borough-risk-10k.png)*
+4. Temporal Risk Concentration
+• 	Harmful crashes cluster heavily during weekday afternoons and early evenings (2–7 PM).
+• 	Evening commute hours show higher harmful crash counts than morning commutes.
+• 	Tuesday–Friday evenings exhibit the strongest concentration.
+• 	These patterns indicate predictable temporal risk windows rather than random variation.
 
+5. Behavioral Drivers of Harm
+• 	Driver inattention and distraction are the leading contributors to injury‑ and fatal‑involved crashes.
+• 	Failure to yield and following too closely are the next most common factors.
+• 	Behavioral and interaction‑based errors account for the majority of harmful crashes.
+• 	Unsafe speed appears less frequently but remains strongly associated with severe outcomes.
 
-
-### Vulnerable Road Users
- - Pedestrians have the highest fatal crash risk per 10,000 crashes among all road users, 3.5x more, compared to motorists and cyclists.
- - Motorists dominate injury counts and represent ~41% of all fatalities, driven by high exposure rather than elevated severity per crash.
- - Staten Island consistently ranks at the top for highest fatal crash risk per 10,000 crashes, across all road users.
-
-*![borough fatal risk per user group](group-borough-risk.png)* 
-*![fatal risk over time per user group](crash-risk-over-time-groups.png)*
-
-
-
-### Contributing Factors
-Driver inattention and distraction is the most common contributing factor in harmful crashes.
-Among crashes resulting in injury or death, driver inattention is cited more frequently than any other contributing factor, making it the dominant behavioral driver of crash harm citywide.
-
-Most harmful crashes are driven by interaction-based driving errors.
-After inattention, failure to yield right-of-way and following too closely are the next most common factors, indicating that conflicts between road users—rather than isolated mistakes—drive a large share of serious crashes.
-
-Speed-related factors amplify severity despite lower frequency.
-Unsafe speed appears less often than inattention or yielding failures, but when present it is disproportionately associated with injuries and fatalities, increasing the likelihood that a crash results in severe harm.
-
-Behavioral factors outweigh mechanical or environmental causes.
-The majority of crashes resulting in injury or death are associated with driver behavior rather than vehicle defects or roadway conditions, highlighting enforcement, street design, and behavior-focused interventions as the most effective levers for reducing crash severity.
-
-These patterns suggest that enforcement and street design interventions targeting driver behavior will be more effective than vehicle- or environment-focused strategies alone.
-
-*![factors causing harmful crashes](harmful-factors.png)*
-
-
-
-### High-Risk Corridors & Locations
-Harmful crashes are disproportionately concentrated on major expressways.
-The highest counts of crashes resulting in injury or death occur along high-capacity corridors such as the Belt Parkway, Long Island Expressway, and Brooklyn–Queens Expressway.
-
-High-risk locations reflect sustained exposure rather than isolated danger points.
-Locations with the most harmful crashes are repeatedly occurring corridors and intersections, indicating that crash harm is driven by continuous traffic volume and speed rather than one-off hazardous sites.
-
-Expressway crashes are associated with higher severity outcomes.
-Crashes occurring on expressways are more likely to result in injury or death compared to local streets, consistent with higher travel speeds and limited recovery margins.
-
-Local streets still account for a broad and persistent injury burden.
-While expressways dominate the most severe crash locations, the majority of harmful crashes occur across the wider local street network, underscoring the need for citywide safety interventions in addition to corridor-specific fixes.
-
-*![high-risk locations chart](at-risk-locations.png)*
+6. Geographic Concentration
+• 	Harmful crashes are unevenly distributed across the street network.
+• 	Major expressways account for a disproportionate share of severe crashes.
+• 	A small number of recurring intersections consistently show elevated harmful crash counts.
+• 	Crash harm clusters in persistent corridors and hotspots rather than isolated, one‑off locations.
 
 
 ### Recommendations
