@@ -161,6 +161,6 @@ Overall crash volume in New York City peaked in 2018–2019 before declining by 
 
 - Align enforcement, signal timing, and temporary traffic controls with predictable high-risk windows (2–7 PM, especially Tuesday through Friday) to maximize the impact of limited safety resources.
 
-### Corridor- and Borough-Specific Interventions
+### Corridor and Borough-Specific Interventions
 
 - Focus safety investments on high-risk corridors and high-severity boroughs. Major expressways account for a disproportionate share of harmful crashes, and Staten Island consistently exhibits the highest fatal risk across user groups. Targeted corridor redesigns and speed management strategies in these areas would address concentrated severity rather than distributing resources evenly across the network.
