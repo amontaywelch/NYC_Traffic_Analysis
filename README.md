@@ -52,7 +52,7 @@ The Python code used to accomplish this task can be viewed [here.](nyc-crashes-b
 
 Overall crash volume in New York City peaked in 2018–2019 before declining by nearly 60% between 2020 and 2024. However, this reduction in crash frequency has not translated into proportional improvements in safety outcomes. While total crashes fell sharply following COVID-related travel shifts, crashes resulting in injury or death rebounded more quickly, and fatal risk per crash increased across boroughs and road user groups. These patterns indicate that fewer crashes have not necessarily resulted in safer conditions, highlighting the importance of monitoring severity, not just volume, when evaluating traffic safety progress.
 
-![dashboard overview page](nyc-overview-page-all-years.png)
+![dashboard overview page](dashboard-visuals/nyc-overview-page-all-years.png)
 
 ---
 
@@ -63,8 +63,8 @@ Overall crash volume in New York City peaked in 2018–2019 before declining by 
 - Fatal crash risk per 10,000 crashes increased across boroughs and road user groups.
 - Fewer crashes did not translate into proportionally safer outcomes, underscoring the need to track severity, not just volume.
 
-![total crashes compared to harmful crashes](total-vs-harmful-crashes.png)
-![harmful crashes over time & indexed](nyc-harmful-crashes-over-time.png)
+![total crashes compared to harmful crashes](dashboard-visuals/total-vs-harmful-crashes.png)
+![harmful crashes over time & indexed](dashboard-visuals/nyc-harmful-crashes-over-time.png)
 
 ---
 
@@ -75,7 +75,7 @@ Overall crash volume in New York City peaked in 2018–2019 before declining by 
 - Brooklyn and Manhattan show lower fatal risk per crash despite high crash volume.
 - Borough rankings remain stable over time, suggesting structural differences rather than temporary fluctuations.
 
-![borough risk per 10k crashes](nyc-borough-fatalities-10k.png)
+![borough risk per 10k crashes](dashboard-visuals/nyc-borough-fatalities-10k.png)
 
 ---
 
@@ -88,8 +88,8 @@ Overall crash volume in New York City peaked in 2018–2019 before declining by 
 - Staten Island shows the highest motorist fatal risk (56.5 per 10,000 crashes), while Manhattan and Brooklyn show the lowest.
 - Borough gaps exceed 20 fatalities per 10,000 crashes, indicating persistent structural differences.
 
-![fatal crash risk over time for motorists](nyc-fatal-risk-over-time-motorists.png)
-![fatal crash risk for motorists by borough](nyc-fatal-crash-risk-borough-motorists.png)
+![fatal crash risk over time for motorists](dashboard-visuals/nyc-fatal-risk-over-time-motorists.png)
+![fatal crash risk for motorists by borough](dashboard-visuals/nyc-fatal-crash-risk-borough-motorists.png)
 
 #### Cyclists
 
@@ -98,8 +98,8 @@ Overall crash volume in New York City peaked in 2018–2019 before declining by 
 - Staten Island and the Bronx show the highest cyclist fatal risk, while Manhattan shows the lowest.
 - Borough disparity is widest for cyclists, with nearly a 30-point gap between highest and lowest boroughs.
 
-![fatal crash risk over time for cyclists](nyc-fatal-crash-risk-over-time-cyclists.png)
-![fatal crash risk for cyclists by borough](nyc-fatal-risk-boroughs-cyclists.png)
+![fatal crash risk over time for cyclists](dashboard-visuals/nyc-fatal-crash-risk-over-time-cyclists.png)
+![fatal crash risk for cyclists by borough](dashboard-visuals/nyc-fatal-risk-boroughs-cyclists.png)
 
 #### Pedestrians
 
@@ -108,8 +108,8 @@ Overall crash volume in New York City peaked in 2018–2019 before declining by 
 - Staten Island and Queens show the highest pedestrian fatal risk, while Manhattan remains lowest.
 - Borough differences are substantial, with over 40 fatalities per 10,000 crashes separating highest and lowest areas.
 
-![fatal crash risk over time for pedestrians](nyc-fatal-risk-over-time-pedestrians.png)
-![fatal crash risk for pedestrians by borough](nyc-fatal-risk-borough-pedestrians.png)
+![fatal crash risk over time for pedestrians](dashboard-visuals/nyc-fatal-risk-over-time-pedestrians.png)
+![fatal crash risk for pedestrians by borough](dashboard-visuals/nyc-fatal-risk-borough-pedestrians.png)
 
 ---
 
@@ -120,7 +120,7 @@ Overall crash volume in New York City peaked in 2018–2019 before declining by 
 - Tuesday–Friday evenings exhibit the strongest concentration.
 - These patterns indicate predictable temporal risk windows rather than random variation.
 
-![overall crashes concentration](nyc-crash-time-heatmap.png)
+![overall crashes concentration](dashboard-visuals/nyc-crash-time-heatmap.png)
 
 ---
 
@@ -131,7 +131,7 @@ Overall crash volume in New York City peaked in 2018–2019 before declining by 
 - Behavioral and interaction-based errors account for the majority of harmful crashes.
 - Unsafe speed appears less frequently but remains strongly associated with severe outcomes.
 
-![harmful crashes factors](nyc-harmful-crashes-factors.png)
+![harmful crashes factors](dashboard-visuals/nyc-harmful-crashes-factors.png)
 
 ---
 
@@ -142,8 +142,8 @@ Overall crash volume in New York City peaked in 2018–2019 before declining by 
 - A small number of recurring intersections consistently show elevated harmful crash counts.
 - Crash harm clusters in persistent corridors and hotspots rather than isolated, one-off locations.
 
-![overall high risk locations](nyc-harmful-locations-overall.png)
-![high risk streets](nyc-harmful-locations-street.png)
+![overall high risk locations](dashboard-visuals/nyc-harmful-locations-overall.png)
+![high risk streets](dashboard-visuals/nyc-harmful-locations-street.png)
 
 ---
 
