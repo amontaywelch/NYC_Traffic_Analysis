@@ -10,7 +10,7 @@ Key areas that fueled insights and targeted recommendations include:
 - **Contributing Factors:** Examine leading crash causes and how they vary across boroughs to inform targeted interventions.
 - **High-Risk Locations:** Identify streets and intersections with concentrated crash severity rather than just high volume.
 
-An interactive dashboard in Power BI can be downloaded [here.](https://drive.google.com/file/d/1h-DyTfiRkmvLYc7xEawxuxmlFAAT9Ip6/view?usp=sharing)
+The video walkthrough showcasing the Power BI dashboard can be viewed [here.](https://www.loom.com/share/abf8391cc8a24b4a8951c1062df68c36)
 
 The SQL queries used to clean, structure, and stage the data for analysis can be viewed [here.](nyc-crashes-data-cleaning.sql)
 
